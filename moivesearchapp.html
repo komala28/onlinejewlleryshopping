@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kilangi Jewellery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body><!-- HEADER --><header class="top-bar">
+  <div class="logo">Kilangi</div>
+  <nav>
+    <a href="#">All Jewellery</a>
+    <a href="#">Gold</a>
+    <a href="#">Silver</a>
+    <a href="#">Gifting</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+  <input type="text" placeholder="Search for Earrings..." />
+</header><!-- HERO SECTION --><section class="hero">
+  <h1>Because You Deserve to <br><span>Feel Timeless.</span></h1>
+  <p>Each piece is thoughtfully designed to celebrate your individuality.</p>
+  <button>Explore the Elegance</button>
+</section><!-- FEATURES --><section class="features">
+  <div>Anti‑Fade Polish</div>
+  <div>Timeless Design</div>
+  <div>Lightweight Comfort</div>
+  <div>Modern Minimal</div>
+</section><!-- BESTSELLERS --><section class="bestsellers">
+  <h2>Explore Our Timeless Bestseller</h2>
+  <div class="products">
+    <div class="card">
+      <div class="img">
+        <img src="c:\Users\PAVAN\OneDrive\Pictures\WhatsApp Image 2025-12-17 at 09.23.32_dbdd51a4.jpg">
+      </div>
+      <h3>Twisted Petal Gold Bangles</h3>
+      <p><span class="price">₹79,904</span> <del>₹99,904</del></p>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="c:\Users\PAVAN\OneDrive\Pictures\WhatsApp Image 2025-12-17 at 09.19.57_a389cb4b.jpg">
+      </div>
+      <h3>Twisted Petal Gold Earrings</h3>
+      <p><span class="price">₹79,904</span> <del>₹99,904</del></p>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="c:\Users\PAVAN\OneDrive\Pictures\WhatsApp Image 2025-12-17 at 09.19.57_5428034f.jpg">
+      </div>
+      <h3>Twisted Petal stone Necklace</h3>
+      <p><span class="price">₹79,904</span> <del>₹99,904</del></p>
+    </div>
+  </div>
+  <button>Shop Bestsellers</button>
+</section><!-- GIFTS --><section class="gifts">
+  <h2>Gifts That Celebrate Every Moment</h2>
+  <div class="gift-grid">
+    <div class="gift-card">Birthday
+      <img src="c:\Users\PAVAN\OneDrive\Pictures\WhatsApp Image 2025-12-17 at 08.56.08_fea0337a.jpg">
+    </div>
+    <div class="gift-card">Anniversary
+      <img src="c:\Users\PAVAN\OneDrive\Pictures\WhatsApp Image 2025-12-17 at 08.45.02_36d35036.jpg">
+    </div>
+    <div class="gift-card">Engagement
+      <img src="c:\Users\PAVAN\OneDrive\Pictures\WhatsApp Image 2025-12-17 at 09.23.35_6c462f1b.jpg">
+    </div>
+  </div>
+</section><!-- ETHOS --><section class="ethos">
+  <h2>Every Shape. Every Sparkle.</h2>
+  <p>Handcrafted with ethical sourcing and sustainable processes.</p>
+  <button>Know More</button>
+</section><!-- REVIEWS --><section class="reviews">
+  <h2>Voices of Our Happy Customers</h2>
+  <div class="review">"So pretty!" – Harshad Mehta</div>
+  <div class="review">"Amazing craftsmanship." – Harshad Mehta</div>
+</section><!-- FOOTER --><footer>
+  <p>© 2025 Kilangi Jewellery</p>
+</footer><script src="script.js"></script></body>
+</html><!-- styles.css --><style>
+:root{
+  --gold:#c9a24d;
+  --dark:#1a1a1a;
+  --light:#f8f6f3;
+  --gray:#777;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#fff;
+  color:var(--dark);
+}
+
+/* HEADER */
+.top-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 40px;
+  border-bottom:1px solid #eee;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:600;
+  color:var(--gold);
+}
+
+nav a{
+  margin:0 12px;
+  text-decoration:none;
+  color:var(--dark);
+  font-size:14px;
+}
+
+.top-bar input{
+  padding:8px 14px;
+  border-radius:20px;
+  border:1px solid #ddd;
+}
+
+/* HERO */
+.hero{
+  padding:100px 40px;
+  text-align:center;
+  background:linear-gradient(to right,#faf7f2,#fff);
+}
+
+.hero h1{
+  font-size:48px;
+  font-weight:500;
+}
+
+.hero span{
+  color:var(--gold);
+}
+
+.hero p{
+  margin:20px 0;
+  color:var(--gray);
+}
+
+.hero button{
+  padding:12px 28px;
+  background:var(--gold);
+  border:none;
+  color:#fff;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  justify-content:space-around;
+  padding:30px 0;
+  background:var(--light);
+}
+
+.features div{
+  font-size:14px;
+  color:var(--dark);
+}
+
+/* BESTSELLERS */
+.bestsellers{
+  padding:80px 40px;
+  text-align:center;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin:40px 0;
+}
+.products img{
+  width:100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.card{
+  border:1px solid #eee;
+  padding:20px;
+  border-radius:16px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card .img{
+  height:250px;
+  background:#f2f2f2;
+  border-radius:12px;
+  margin-bottom:16px;
+}
+
+.price{
+  color:var(--gold);
+  font-weight:600;
+}
+
+/* GIFTS */
+.gifts{
+  padding:80px 40px;
+  background:var(--light);
+  text-align:center;
+}
+.gifts img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.4s;
+}
+.gift-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+
+.gift-card{
+  padding:60px 20px;
+  background:#fff;
+  border-radius:20px;
+  font-size:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* ETHOS */
+.ethos{
+  padding:100px 40px;
+  text-align:center;
+}
+
+.ethos button{
+  margin-top:20px;
+  padding:12px 30px;
+  border:1px solid var(--gold);
+  background:none;
+  border-radius:30px;
+  color:var(--gold);
+}
+
+/* REVIEWS */
+.reviews{
+  background:var(--light);
+  padding:80px 40px;
+  text-align:center;
+}
+
+.review{
+  max-width:600px;
+  margin:20px auto;
+  font-style:italic;
+}
+
+/* FOOTER */
+footer{
+  padding:30px;
+  text-align:center;
+  border-top:1px solid #eee;
+  font-size:14px;
+  color:var(--gray);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .products,.gift-grid{grid-template-columns:1fr;}
+  nav{display:none;}
+}
+</style>
